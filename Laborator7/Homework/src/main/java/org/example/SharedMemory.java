@@ -21,7 +21,7 @@ public class SharedMemory {
         Collections.shuffle(tokens);
     }
 
-    public synchronized List<Token> extractTokens() {
+    public synchronized List<Token> extractTokens() { // sync - nu pot 2 thread uri simultan
         List<Token> extracted = new ArrayList<>();
         for (int i = 0; i < noOfTokens; ++i) {
             if (tokens.isEmpty())
