@@ -14,7 +14,7 @@ public class Main {
             InitializationException {
         Catalog catalog = new Catalog("Catalog");
 
-        new AddCommand().execute(catalog, new Item("Cat1", "Advanced Programming", "C:\\Users\\dasca\\Desktop\\IP_Design"));
+        new AddCommand().execute(catalog, new Item("Cat1", "Advanced Programming", "C:\\Users\\Victor\\OneDrive\\Desktop\\TW"));
         new AddCommand().execute(catalog, new Item("Cat2", "Algorithm Design", "https://www.uaic.ro/"));
 
         new ListCommand().execute(catalog);

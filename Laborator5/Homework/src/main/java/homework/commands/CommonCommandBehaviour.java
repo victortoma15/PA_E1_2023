@@ -13,7 +13,7 @@ import java.util.List;
  * this class creates the common behaviour for all future commands.
  */
 public abstract class CommonCommandBehaviour implements Command {
-    public static final String path = "C:/Users/dasca/Desktop/catalog.json";
+    public static final String path = "C:/Users/Victor/OneDrive/Desktop/catalog.json";
     List<Object> obj;
 
     /**
@@ -28,7 +28,7 @@ public abstract class CommonCommandBehaviour implements Command {
      */
     public void execute(Object... objects) throws IOException, TemplateException, URISyntaxException, CommandException,
             InitializationException {
-        this.obj = Arrays.stream(objects).toList();
+        this.obj = Arrays.stream(objects).toList(); // stream - convert de la param la lista
         if (obj == null) throw new InitializationException("The initial list of Objects is null");
         run();
     }

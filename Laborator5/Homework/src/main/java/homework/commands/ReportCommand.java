@@ -23,7 +23,7 @@ public class ReportCommand extends CommonCommandBehaviour {
         Template template = configuration.getTemplate("template.ftl");
         Writer writer = null;
         try {
-            writer = new FileWriter(new File("C:\\Users\\dasca\\Desktop\\template.html"));
+            writer = new FileWriter(new File("C:\\Users\\Victor\\OneDrive\\template.html"));
             template.process(catalog, writer);
         } finally {
             if (writer != null) {
