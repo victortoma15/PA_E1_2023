@@ -93,7 +93,7 @@ public class Robot implements Runnable {
             }
             startRow = moveRow(startRow);
             startColumn = moveColumn(startColumn);
-            // sleep for 2 second
+            // sleep for 2 seconds
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {

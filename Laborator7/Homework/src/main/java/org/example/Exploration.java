@@ -39,17 +39,7 @@ public class Exploration {
         new Thread(timer).start();
     }
 
-    public static void main(String args[]) {
-        var explore = new Exploration();
-        explore.addRobot(new Robot("Wall-E", explore));
-        explore.addRobot(new Robot("R2D2", explore));
-        explore.addRobot(new Robot("Optimus Prime", explore));
-        explore.setTimer(new Timer(explore));
-        explore.start();
-
-    }
-
-    private void addRobot(Robot robot) {
+    public void addRobot(Robot robot) {
         robots.add(robot);
     }
 

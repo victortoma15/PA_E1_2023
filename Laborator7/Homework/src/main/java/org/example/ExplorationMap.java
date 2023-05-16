@@ -32,7 +32,7 @@ public class ExplorationMap {
     }
 
     public boolean visit(int row, int col, Robot robot) {
-        synchronized (matrix[row][col]) {
+        synchronized (matrix[row][col]) { // 2 roboti nu sunt in aceeasi patratica din matrice simultan
             if (!matrix[row][col].getTokens().isEmpty()) {
                 System.out.println(robot.getName() + " failed to visit " + row + " " + col + "\n" + this.toString());
                 return false;
